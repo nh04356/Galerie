@@ -1,0 +1,27 @@
+
+<f:layout name="Default" />
+<f:section name="main">
+
+	<f:link.action action="list" additionalAttributes="{data-filter: '*'}" class="btn" > Alle</f:link.action>
+	<f:for each="{categories}" as="category" iteration="i">
+		<f:link.action action="list" additionalAttributes="{data-filter: '.category-{category.uid}'}" class="btn" > {category.title}</f:link.action>
+	</f:for>
+	
+</f:section>
+
+<f:section name="content">
+<div class="grid-sizer"></div>
+		<f:for each="{imagesArray}" as="imageItem">
+				<div class="grid-item {imageItem.cat}  {f:if(condition:'{imageItem.img.wide} == 1', then:'wide', else:'normal')} ">
+					<f:image image="{imageItem.img.image}"></f:image>
+					<div class="carousel-caption">
+						<h3>{imageItem.img.headline}</h3>
+						<p>{imageItem.img.subline}</p>
+						<f:link.page pageUid="{f:uri.image(src:imageItem.img.image.originalResource.publicUrl, treatIdAsReference:1)}" additionalAttributes="{data-lightbox:'image-1', data-title:imageItem.img.subline}">
+							+
+						</f:link.page>
+					</div>
+				</div>
+			
+	</f:for>	
+</f:section>

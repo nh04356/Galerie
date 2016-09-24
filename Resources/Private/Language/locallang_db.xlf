@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-05-09T15:02:47Z" product-name="galerie">
+		<header/>
+		<body>
+			<trans-unit id="tx_galerie_domain_model_image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_galerie_domain_model_image.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_galerie_domain_model_image.headline">
+				<source>Headline</source>
+			</trans-unit>
+			<trans-unit id="tx_galerie_domain_model_image.subline">
+				<source>Subline</source>
+			</trans-unit>
+			<trans-unit id="tx_galerie_domain_model_image.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_galerie_domain_model_image.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_galerie_domain_model_image.category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_galerie_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_galerie_domain_model_category.title">
+				<source>Title</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
